@@ -51,7 +51,7 @@ public class PackageTest extends AbstractProvisionConfiguredMojoTestCase {
         String originalHome = System.getProperty(JBOSS_HOME_PROPERTY);
         System.setProperty(JBOSS_HOME_PROPERTY, jbossHome.toString());
         try {
-            checkStandaloneWildFlyHome(jbossHome, 1, layers, excluded, true, "org.eap.maven.plugin-package-goal",
+            checkStandaloneWildFlyHome(jbossHome, 1, layers, excluded, true, "org.eap.maven.command-plugin-package-goal",
                     "org.eap.maven.plugin-package-goal-from-script");
         } finally {
             System.clearProperty(JBOSS_HOME_PROPERTY);

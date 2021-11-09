@@ -62,7 +62,7 @@
                                 <script>test-package.cli</script>
                             </scripts>
                             <commands>
-                                <command>/system-property=org.wildfly.maven.plugin-package-goal:add(value=true)</command>
+                                <command>/system-property=org.eap.maven.command-plugin-package-goal:add(value=true)</command>
                             </commands>
                         </packaging-script>
                     </packaging-scripts>
