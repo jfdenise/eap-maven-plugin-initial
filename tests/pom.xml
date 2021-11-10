@@ -36,6 +36,7 @@
     <description>Tests the maven plugin</description>
 
     <properties>
+        <version.org.eap>7.4.1.GA-redhat-00003</version.org.eap>
         <wildfly.test.config.dir>
             ${project.build.testOutputDirectory}${file.separator}test-project
         </wildfly.test.config.dir>
