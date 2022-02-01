@@ -1,0 +1,167 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] EAP Maven plugin Parent                                            [pom]
+[INFO] EAP Maven plugin                                          [maven-plugin]
+[INFO] EAP Maven Plugin Tests                                             [jar]
+[INFO] 
+[INFO] -----------< org.jboss.eap.plugins:eap-maven-plugin-parent >------------
+[INFO] Building EAP Maven plugin Parent 1.0.0.GA-redhat-SNAPSHOT          [1/3]
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:list (default-cli) @ eap-maven-plugin-parent ---
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    org.wildfly.checkstyle:wildfly-checkstyle-config:jar:1.0.8.Final:provided -- module wildfly.checkstyle.config (auto)
+[INFO] 
+[INFO] 
+[INFO] ---------------< org.jboss.eap.plugins:eap-maven-plugin >---------------
+[INFO] Building EAP Maven plugin 1.0.0.GA-redhat-SNAPSHOT                 [2/3]
+[INFO] ----------------------------[ maven-plugin ]----------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:list (default-cli) @ eap-maven-plugin ---
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    aopalliance:aopalliance:jar:1.0:compile -- module aopalliance (auto)
+[INFO]    com.google.guava:guava:jar:30.1.0.redhat-00001:compile -- module guava (auto)
+[INFO]    javax.annotation:jsr250-api:jar:1.0:compile -- module jsr250.api (auto)
+[INFO]    javax.enterprise:cdi-api:jar:1.0:compile -- module cdi.api (auto)
+[INFO]    javax.inject:javax.inject:jar:1:compile -- module javax.inject (auto)
+[INFO]    org.apache.commons:commons-compress:jar:1.21:compile -- module org.apache.commons.compress [auto]
+[INFO]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.5:compile -- module maven.plugin.annotations (auto)
+[INFO]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:compile -- module maven.artifact.transfer (auto)
+[INFO]    org.apache.maven:maven-aether-provider:jar:3.3.1:compile -- module maven.aether.provider (auto)
+[INFO]    org.apache.maven:maven-artifact:jar:3.3.1:compile -- module maven.artifact (auto)
+[INFO]    org.apache.maven:maven-builder-support:jar:3.3.1:compile -- module maven.builder.support (auto)
+[INFO]    org.apache.maven:maven-core:jar:3.3.1:compile -- module maven.core (auto)
+[INFO]    org.apache.maven:maven-model-builder:jar:3.3.1:compile -- module maven.model.builder (auto)
+[INFO]    org.apache.maven:maven-model:jar:3.3.1:compile -- module maven.model (auto)
+[INFO]    org.apache.maven:maven-plugin-api:jar:3.3.1:compile -- module maven.plugin.api (auto)
+[INFO]    org.apache.maven:maven-repository-metadata:jar:3.3.1:compile -- module maven.repository.metadata (auto)
+[INFO]    org.apache.maven:maven-settings-builder:jar:3.3.1:compile -- module maven.settings.builder (auto)
+[INFO]    org.apache.maven:maven-settings:jar:3.3.1:compile -- module maven.settings (auto)
+[INFO]    org.codehaus.plexus:plexus-classworlds:jar:2.5.2:compile -- module plexus.classworlds (auto)
+[INFO]    org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:compile -- module plexus.component.annotations (auto)
+[INFO]    org.codehaus.plexus:plexus-interpolation:jar:1.21:compile -- module plexus.interpolation (auto)
+[INFO]    org.codehaus.plexus:plexus-utils:jar:3.0.20:compile -- module plexus.utils (auto)
+[INFO]    org.eclipse.aether:aether-api:jar:1.1.0:compile -- module aether.api (auto)
+[INFO]    org.eclipse.aether:aether-impl:jar:1.0.2.v20150114:compile -- module aether.impl (auto)
+[INFO]    org.eclipse.aether:aether-spi:jar:1.0.2.v20150114:compile -- module aether.spi (auto)
+[INFO]    org.eclipse.aether:aether-util:jar:1.0.2.v20150114:compile -- module aether.util (auto)
+[INFO]    org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0:compile -- module org.eclipse.sisu.inject (auto)
+[INFO]    org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.0:compile -- module org.eclipse.sisu.plexus (auto)
+[INFO]    org.jboss.galleon:galleon-core:jar:4.2.8.Final:compile -- module galleon.core (auto)
+[INFO]    org.jboss.galleon:galleon-maven-plugin:jar:4.2.8.Final:compile -- module galleon.maven.plugin (auto)
+[INFO]    org.jboss.galleon:galleon-maven-universe:jar:4.2.8.Final:compile -- module galleon.maven.universe (auto)
+[INFO]    org.jboss.logging:jboss-logging:jar:3.4.1.Final-redhat-00001:compile -- module org.jboss.logging [auto]
+[INFO]    org.jboss.logmanager:jboss-logmanager:jar:2.1.18.Final-redhat-00001:compile -- module jboss.logmanager (auto)
+[INFO]    org.jboss:staxmapper:jar:1.3.0.Final-redhat-1:compile -- module staxmapper (auto)
+[INFO]    org.sonatype.plexus:plexus-cipher:jar:1.4:compile -- module plexus.cipher (auto)
+[INFO]    org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:compile -- module plexus.sec.dispatcher (auto)
+[INFO]    org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.5:compile -- module sisu.guice (auto)
+[INFO]    org.wildfly.checkstyle:wildfly-checkstyle-config:jar:1.0.8.Final:provided -- module wildfly.checkstyle.config (auto)
+[INFO]    org.wildfly.common:wildfly-common:jar:1.5.4.Final-redhat-00001:compile -- module wildfly.common (auto)
+[INFO]    org.wildfly.core:wildfly-launcher:jar:15.0.5.Final-redhat-00001:compile -- module wildfly.launcher (auto)
+[INFO]    org.wildfly.plugins:wildfly-maven-plugin:jar:3.0.0.Beta1:compile -- module wildfly.maven.plugin (auto)
+[INFO]    org.wildfly.plugins:wildfly-plugin-core:jar:3.0.0.Beta1:compile -- module org.wildfly.plugin.core [auto]
+[INFO] 
+[INFO] 
+[INFO] ------------< org.jboss.eap.plugins:eap-maven-plugin-tests >------------
+[INFO] Building EAP Maven Plugin Tests 1.0.0.GA-redhat-SNAPSHOT           [3/3]
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- maven-dependency-plugin:3.1.1:list (default-cli) @ eap-maven-plugin-tests ---
+[INFO] Can't extract module name from plexus-container-default-1.0-alpha-9-stable-1.jar: plexus.container.default: Invalid module name: 'default' is not a Java identifier
+[INFO] 
+[INFO] The following files have been resolved:
+[INFO]    aopalliance:aopalliance:jar:1.0:test -- module aopalliance (auto)
+[INFO]    classworlds:classworlds:jar:1.1-alpha-2:test -- module classworlds (auto)
+[INFO]    com.google.guava:failureaccess:jar:1.0.1.redhat-00002:compile -- module failureaccess (auto)
+[INFO]    com.google.guava:guava:jar:30.1.0.redhat-00001:test -- module guava (auto)
+[INFO]    commons-codec:commons-codec:jar:1.6:test -- module commons.codec (auto)
+[INFO]    commons-io:commons-io:jar:2.2:test -- module commons.io (auto)
+[INFO]    javax.annotation:jsr250-api:jar:1.0:test -- module jsr250.api (auto)
+[INFO]    javax.enterprise:cdi-api:jar:1.0:test -- module cdi.api (auto)
+[INFO]    javax.inject:javax.inject:jar:1:test -- module javax.inject (auto)
+[INFO]    junit:junit:jar:4.13.2:test -- module junit [auto]
+[INFO]    net.bytebuddy:byte-buddy-agent:jar:1.8.5:test -- module net.bytebuddy.agent [auto]
+[INFO]    net.bytebuddy:byte-buddy:jar:1.8.5:test -- module net.bytebuddy [auto]
+[INFO]    org.apache.commons:commons-compress:jar:1.21:test -- module org.apache.commons.compress [auto]
+[INFO]    org.apache.httpcomponents:httpclient:jar:4.3.5:test -- module httpclient (auto)
+[INFO]    org.apache.httpcomponents:httpcore:jar:4.3.2:test -- module httpcore (auto)
+[INFO]    org.apache.maven.plugin-testing:maven-plugin-testing-harness:jar:3.3.0:test -- module maven.plugin.testing.harness (auto)
+[INFO]    org.apache.maven.plugin-tools:maven-plugin-annotations:jar:3.5:test -- module maven.plugin.annotations (auto)
+[INFO]    org.apache.maven.shared:maven-artifact-transfer:jar:0.9.1:test -- module maven.artifact.transfer (auto)
+[INFO]    org.apache.maven.wagon:wagon-provider-api:jar:2.8:test -- module wagon.provider.api (auto)
+[INFO]    org.apache.maven:maven-aether-provider:jar:3.3.1:test -- module maven.aether.provider (auto)
+[INFO]    org.apache.maven:maven-artifact:jar:3.3.1:test -- module maven.artifact (auto)
+[INFO]    org.apache.maven:maven-builder-support:jar:3.3.1:test -- module maven.builder.support (auto)
+[INFO]    org.apache.maven:maven-compat:jar:3.3.1:test -- module maven.compat (auto)
+[INFO]    org.apache.maven:maven-core:jar:3.3.1:test -- module maven.core (auto)
+[INFO]    org.apache.maven:maven-model-builder:jar:3.3.1:test -- module maven.model.builder (auto)
+[INFO]    org.apache.maven:maven-model:jar:3.3.1:test -- module maven.model (auto)
+[INFO]    org.apache.maven:maven-plugin-api:jar:3.3.1:test -- module maven.plugin.api (auto)
+[INFO]    org.apache.maven:maven-repository-metadata:jar:3.3.1:test -- module maven.repository.metadata (auto)
+[INFO]    org.apache.maven:maven-settings-builder:jar:3.3.1:test -- module maven.settings.builder (auto)
+[INFO]    org.apache.maven:maven-settings:jar:3.3.1:test -- module maven.settings (auto)
+[INFO]    org.codehaus.plexus:plexus-archiver:jar:2.2:test -- module plexus.archiver (auto)
+[INFO]    org.codehaus.plexus:plexus-classworlds:jar:2.5.2:test -- module plexus.classworlds (auto)
+[INFO]    org.codehaus.plexus:plexus-component-annotations:jar:1.5.5:test -- module plexus.component.annotations (auto)
+[INFO]    org.codehaus.plexus:plexus-container-default:jar:1.0-alpha-9-stable-1:test
+[INFO]    org.codehaus.plexus:plexus-interpolation:jar:1.21:test -- module plexus.interpolation (auto)
+[INFO]    org.codehaus.plexus:plexus-io:jar:2.0.4:test -- module plexus.io (auto)
+[INFO]    org.codehaus.plexus:plexus-utils:jar:3.0.20:test -- module plexus.utils (auto)
+[INFO]    org.eclipse.aether:aether-api:jar:1.1.0:test -- module aether.api (auto)
+[INFO]    org.eclipse.aether:aether-connector-basic:jar:1.1.0:test -- module aether.connector.basic (auto)
+[INFO]    org.eclipse.aether:aether-impl:jar:1.0.2.v20150114:test -- module aether.impl (auto)
+[INFO]    org.eclipse.aether:aether-spi:jar:1.1.0:test -- module aether.spi (auto)
+[INFO]    org.eclipse.aether:aether-transport-http:jar:1.1.0:test -- module aether.transport.http (auto)
+[INFO]    org.eclipse.aether:aether-util:jar:1.1.0:test -- module aether.util (auto)
+[INFO]    org.eclipse.sisu:org.eclipse.sisu.inject:jar:0.3.0:test -- module org.eclipse.sisu.inject (auto)
+[INFO]    org.eclipse.sisu:org.eclipse.sisu.plexus:jar:0.3.0:test -- module org.eclipse.sisu.plexus (auto)
+[INFO]    org.hamcrest:hamcrest-core:jar:1.3:test -- module hamcrest.core (auto)
+[INFO]    org.jboss.eap.plugins:eap-maven-plugin:jar:1.0.0.GA-redhat-SNAPSHOT:test -- module eap.maven.plugin (auto)
+[INFO]    org.jboss.galleon:galleon-core:jar:4.2.8.Final:test -- module galleon.core (auto)
+[INFO]    org.jboss.galleon:galleon-maven-plugin:jar:4.2.8.Final:test -- module galleon.maven.plugin (auto)
+[INFO]    org.jboss.galleon:galleon-maven-universe:jar:4.2.8.Final:test -- module galleon.maven.universe (auto)
+[INFO]    org.jboss.logging:jboss-logging:jar:3.4.1.Final-redhat-00001:compile -- module org.jboss.logging [auto]
+[INFO]    org.jboss.logmanager:jboss-logmanager:jar:2.1.18.Final-redhat-00001:test -- module jboss.logmanager (auto)
+[INFO]    org.jboss.modules:jboss-modules:jar:1.12.0.Final-redhat-00001:test -- module jboss.modules (auto)
+[INFO]    org.jboss.remoting:jboss-remoting:jar:5.0.23.SP1-redhat-00001:test -- module jboss.remoting (auto)
+[INFO]    org.jboss.slf4j:slf4j-jboss-logging:jar:1.2.1.Final:compile -- module slf4j.jboss.logging (auto)
+[INFO]    org.jboss.threads:jboss-threads:jar:2.4.0.Final-redhat-00001:test -- module jboss.threads (auto)
+[INFO]    org.jboss.xnio:xnio-api:jar:3.8.4.Final-redhat-00001:test -- module xnio.api (auto)
+[INFO]    org.jboss.xnio:xnio-nio:jar:3.8.4.Final-redhat-00001:test -- module xnio.nio (auto)
+[INFO]    org.jboss:jboss-dmr:jar:1.5.1.Final-redhat-00001:test -- module org.jboss.dmr [auto]
+[INFO]    org.jboss:staxmapper:jar:1.3.0.Final-redhat-1:test -- module staxmapper (auto)
+[INFO]    org.mockito:mockito-core:jar:2.18.3:test -- module org.mockito [auto]
+[INFO]    org.objenesis:objenesis:jar:2.6:test -- module objenesis (auto)
+[INFO]    org.slf4j:jcl-over-slf4j:jar:1.6.2:test -- module jcl.over.slf4j (auto)
+[INFO]    org.slf4j:slf4j-api:jar:1.7.21:compile -- module slf4j.api (auto)
+[INFO]    org.sonatype.plexus:plexus-cipher:jar:1.4:test -- module plexus.cipher (auto)
+[INFO]    org.sonatype.plexus:plexus-sec-dispatcher:jar:1.3:test -- module plexus.sec.dispatcher (auto)
+[INFO]    org.sonatype.sisu:sisu-guice:jar:no_aop:3.2.5:test -- module sisu.guice (auto)
+[INFO]    org.wildfly.checkstyle:wildfly-checkstyle-config:jar:1.0.8.Final:provided -- module wildfly.checkstyle.config (auto)
+[INFO]    org.wildfly.client:wildfly-client-config:jar:1.0.1.Final:test -- module wildfly.client.config (auto)
+[INFO]    org.wildfly.common:wildfly-common:jar:1.5.4.Final-redhat-00001:test -- module wildfly.common (auto)
+[INFO]    org.wildfly.core:wildfly-controller-client:jar:15.0.5.Final-redhat-00001:test -- module wildfly.controller.client (auto)
+[INFO]    org.wildfly.core:wildfly-launcher:jar:15.0.5.Final-redhat-00001:test -- module wildfly.launcher (auto)
+[INFO]    org.wildfly.core:wildfly-protocol:jar:15.0.5.Final-redhat-00001:test -- module wildfly.protocol (auto)
+[INFO]    org.wildfly.plugins:wildfly-maven-plugin-tests-shared:jar:3.0.0.Beta1:test -- module wildfly.maven.plugin.tests.shared (auto)
+[INFO]    org.wildfly.plugins:wildfly-maven-plugin:jar:3.0.0.Beta1:test -- module wildfly.maven.plugin (auto)
+[INFO]    org.wildfly.plugins:wildfly-plugin-core:jar:3.0.0.Beta1:test -- module org.wildfly.plugin.core [auto]
+[INFO]    org.wildfly.security:wildfly-elytron:jar:1.15.6.Final-redhat-00001:test -- module wildfly.elytron (auto)
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for EAP Maven plugin Parent 1.0.0.GA-redhat-SNAPSHOT:
+[INFO] 
+[INFO] EAP Maven plugin Parent ............................ SUCCESS [  0.792 s]
+[INFO] EAP Maven plugin ................................... SUCCESS [  0.346 s]
+[INFO] EAP Maven Plugin Tests ............................. SUCCESS [  0.624 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.223 s
+[INFO] Finished at: 2022-02-01T10:47:14+01:00
+[INFO] ------------------------------------------------------------------------
