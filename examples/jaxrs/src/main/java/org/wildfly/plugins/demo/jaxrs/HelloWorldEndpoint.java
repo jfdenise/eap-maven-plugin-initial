@@ -12,6 +12,6 @@ public class HelloWorldEndpoint {
     @GET
     @Produces("text/plain")
     public Response doGet() {
-        return Response.ok("Hello from EAP!").build();
+        return Response.ok("Hello from WildFly!").build();
     }
 }

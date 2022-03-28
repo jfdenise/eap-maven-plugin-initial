@@ -1,0 +1,23 @@
+id: eap-example
+name: EAP and XP example
+description: |-
+  EAP and XP example
+vendor:
+  name: WildFly
+  support: community
+repositories:
+  - id: maven-central
+    url: https://repo1.maven.org/maven2/
+streams:
+  - groupId: org.jboss.eap
+    artifactId: wildfly-ee-galleon-pack
+    version:  '7.4.3.GA-redhat-SNAPSHOT'
+  - groupId: org.jboss.eap
+    artifactId: eap-datasources-galleon-pack
+    version:  '7.4.0.GA-redhat-SNAPSHOT'
+  - groupId: org.jboss.eap
+    artifactId: wildfly-galleon-pack
+    version:  '4.0.0.GA-fake-redhat-00001'
+  - groupId: io.undertow
+    artifactId: undertow-core
+    version:  '2.2.14.Final'

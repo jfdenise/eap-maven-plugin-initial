@@ -58,6 +58,14 @@
             <groupId>org.jboss</groupId>
             <artifactId>staxmapper</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.wildfly.channel</groupId>
+            <artifactId>channel-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.eap.galleon</groupId>
+            <artifactId>jboss-channels-galleon-universe</artifactId>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

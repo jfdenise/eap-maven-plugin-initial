@@ -16,10 +16,19 @@
  */
 package org.jboss.eap.plugin.goals;
 
+import java.io.IOException;
+import java.net.MalformedURLException;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.List;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
 import org.apache.maven.plugins.annotations.ResolutionScope;
 import org.apache.maven.plugin.MojoExecutionException;
+import org.apache.maven.plugin.MojoFailureException;
+import org.apache.maven.plugins.annotations.Parameter;
+import org.jboss.galleon.universe.maven.MavenUniverseException;
+import org.jboss.galleon.universe.maven.repo.MavenRepoManager;
 /**
  * Package an EAP server.
  *
@@ -28,9 +37,36 @@ import org.apache.maven.plugin.MojoExecutionException;
 @Mojo(name = "package", requiresDependencyResolution = ResolutionScope.COMPILE_PLUS_RUNTIME, defaultPhase = LifecyclePhase.PACKAGE)
 public class PackageServerMojo extends org.wildfly.plugin.provision.PackageServerMojo {
 
+    @Parameter(alias = "channels", required = false, property = PropertyNames.JBOSS_EAP_PROVISIONING_CHANNELS)
+    List<String>  channels;
+
     @Override
     protected void enrichRepositories() throws MojoExecutionException {
         // NO-OP
     }
 
+    @Override
+    protected void serverProvisioned(Path jbossHome) throws MojoExecutionException, MojoFailureException {
+        if (artifactResolver instanceof ChannelMavenArtifactRepositoryManager) {
+            try {
+                ((ChannelMavenArtifactRepositoryManager) artifactResolver).done(jbossHome);
+            } catch (IOException | MavenUniverseException ex) {
+                throw new MojoExecutionException(ex.getLocalizedMessage(), ex);
+            }
+        }
+        super.serverProvisioned(jbossHome);
+    }
+
+    @Override
+    protected MavenRepoManager buildArtifactResolver() throws MojoExecutionException{
+        if (channels == null || channels.isEmpty()) {
+            return super.buildArtifactResolver();
+        } else {
+            try {
+                return new ChannelMavenArtifactRepositoryManager(project, channels, Paths.get(project.getBuild().getDirectory()), repoSystem, repoSession);
+            } catch (MalformedURLException ex) {
+                throw new MojoExecutionException(ex.getLocalizedMessage(), ex);
+            }
+        }
+    }
 }
